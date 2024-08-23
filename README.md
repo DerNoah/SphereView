@@ -1,4 +1,3 @@
-# SphereView
 <h1> SphereView
   <img align="right" alt="Project logo" src="../assets/Icon.png" width=128px>
 </h1>
