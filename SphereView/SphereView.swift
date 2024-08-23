@@ -17,6 +17,8 @@ open class SphereView: UIView {
     
     open var scrollSensitivity: CGFloat = 0.01
     
+    open var adjustAlphaWithZPosition: Bool = true { didSet { positionSubviews() }}
+    
     open var isScrollEnabled: Bool = true {
         didSet {
             if isPinchEnabled {
@@ -136,7 +138,10 @@ open class SphereView: UIView {
             view.center = CGPoint(x: x, y: y)
             
             view.transform = CGAffineTransform(scaleX: transformedZ, y: transformedZ)
-            view.alpha = transformedZ + 0.1
+            
+            if adjustAlphaWithZPosition {
+                view.alpha = transformedZ + 0.1
+            }
             
             view.layer.zPosition = transformedZ
             view.isUserInteractionEnabled = z < 0
