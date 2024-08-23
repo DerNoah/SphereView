@@ -129,7 +129,7 @@ open class SphereView: UIView {
         for (i, view) in contentView.subviews.reversed().enumerated() {
             // Calculate spherical position
             let x = (spherePositions[i].x * sphereRadius) + contentView.bounds.width / 2
-            let y = (spherePositions[i].y * sphereRadius) + contentView.bounds.height / 3
+            let y = (spherePositions[i].y * sphereRadius) + contentView.bounds.height / 2
             let z: CGFloat = spherePositions[i].z // -1.0 to +1.0
             let normalizedZ = ((z + 1) / 2)
             
