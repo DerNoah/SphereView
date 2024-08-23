@@ -10,5 +10,4 @@ Simply add **SphereView** as subview to your view and add all sphere elements as
 > [!NOTE]  
 > Subviews of **SphereView** are not lazy loaded or cached. How much subviews you can add to the contentView depends on your hardware limitations.
 
-Demo:
 ![](../assets/Demo.gif)
