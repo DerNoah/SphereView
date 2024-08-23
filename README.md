@@ -5,7 +5,7 @@
 A UIKit View that aligns given subviews as sphere.
 
 Demo:
-![](../assets/Demo.mp4)
+![](../assets/Demo.gif)
 
 ## How To Use
 Simply add **SphereView** as subview to your view and add all sphere elements as subview of the contentview. They are automatically arranged as spheres with the same distance between them. Or you can Subclass **SphereView**.
